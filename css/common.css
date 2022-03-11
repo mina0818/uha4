@@ -1,0 +1,86 @@
+/* @font-face {
+    font-family: 'HanSans';
+    src: url(../font/SpoqaHanSansNeo-Regular.woff2) format('woff2');
+    font-weight: 400;
+  }
+@font-face {
+    font-family: 'HanSans';
+    src: url(../font/SpoqaHanSansNeo-Medium.woff2) format('woff2');
+    font-weight: 500;
+  }
+@font-face {
+    font-family: 'HanSans';
+    src: url(../font/SpoqaHanSansNeo-Bold.woff2) format('woff2');
+    font-weight:700;
+  }
+ */
+
+body{
+    width: 100vw;
+    /* font-family: proxima-nova,Helvetica,Arial,sans-serif; */
+    font-family: 'Poppins', sans-serif;
+    color: #000;
+    line-height: 20px;
+    font-size: 14px;
+    overflow-x: hidden;
+    padding-top: 120px;
+}
+body.hide{overflow: hidden;}
+  
+  .blind{
+    width: 1px;height: 1px;
+    position: absolute;
+    overflow: hidden;
+    margin: -1px;
+    clip: rect(0,0,0,0);
+  }
+
+  body.hidden{
+    overflow: hidden;
+  }
+  img{
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  a {
+    display: block;
+    text-decoration: none;
+}
+button{
+    outline: none;
+    border: 0;
+}
+
+.bold {font-weight: bold;}
+
+.inner{
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 100px;
+}
+
+
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after{content:none;}
+.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after{content: none}
+.swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled{opacity: 1;}
+
+
+
+
+/* 미디어쿼리 */
+
+@media screen and (max-width: 1200px){
+  .inner{padding: 0 25px;}
+}
+
+@media screen and (max-width: 768px){
+  body{padding-top: 0;}
+}
+
+@media screen and (max-width: 375px){
+  h3{font-size: 30px !important;}
+}
